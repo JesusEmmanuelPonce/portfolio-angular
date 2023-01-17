@@ -22,6 +22,27 @@
             list-style: none;
             margin: 0;
             padding: 0;
+
+            &.active {
+                background-color: red;
+                color: #fff;
+            }
+
+            &.itemLink {
+                padding: 3px 7px;
+                text-decoration: none;
+                background-image: linear-gradient(red, red);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+
+                &:hover,
+                &:focus {
+                    cursor: pointer;
+                    background-size: 100% 2px;
+                }
+            }
         }
     }
 

@@ -1,8 +1,27 @@
 <nav class="navbar">
     <ul>
-        <li>{{ 'home' | translate }}</li>
-        <li>{{ 'about' | translate }}</li>
-        <li>{{ 'projects' | translate }}</li>
+        <li
+            routerLink=""
+            class="itemLink"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+        >
+            {{ 'home' | translate }}
+        </li>
+        <li
+            routerLink="about"
+            class="itemLink"
+            routerLinkActive="active"
+        >
+            {{ 'about' | translate }}
+        </li>
+        <li
+            routerLink="projects"
+            class="itemLink"
+            routerLinkActive="active"
+        >
+            {{ 'projects' | translate }}
+        </li>
     </ul>
     <div class="navbar__wrapBtns">
         <button class="active" (click)="onSaveInLocalStorage()">
