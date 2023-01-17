@@ -1,0 +1,15 @@
+<nav class="navbar">
+    <ul>
+        <li>{{ 'home' | translate }}</li>
+        <li>{{ 'about' | translate }}</li>
+        <li>{{ 'projects' | translate }}</li>
+    </ul>
+    <div class="navbar__wrapBtns">
+        <button class="active" (click)="onSaveInLocalStorage()">
+            <img src="./assets/img/mexico-flag.png">
+        </button>
+        <button class="active" (click)="onSaveInLocalStorage()">
+            <img src="./assets/img/usa-flag.png">
+        </button>
+    </div>
+</nav>

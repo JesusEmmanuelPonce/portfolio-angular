@@ -1,0 +1,54 @@
+.navbar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1.5px 0px;
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        margin: 0;
+        padding: 0;
+        
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__wrapBtns {
+        margin-top: 10px;
+
+        button {
+            background: transparent;
+            border: none;
+            padding: 3px 3px 0 3px;
+            width: 35px;
+ 
+            &:hover {
+                cursor: pointer;
+            }
+            
+            &:first-child {
+                margin-right: 10px;
+            }
+
+            &.active {
+                border: 1px solid blue;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -7,15 +7,16 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
-// AoT requires an exported function for factories
 export function httpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, '../assets/', '.json');
+  return new TranslateHttpLoader(http, '../assets/i18n/', '.json');
 }
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
